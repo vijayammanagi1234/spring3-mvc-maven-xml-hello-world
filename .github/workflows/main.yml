@@ -27,5 +27,5 @@ jobs:
       - name: Run a one-line script
         run: mvn package
       - name: deploy to tomcat
-        run: curl -v -u admin:admin -T /home/runner/work/spring3-mvc-maven-xml-hello-world/spring3-mvc-maven-xml-hello-world/target/spring3-mvc-maven-xml-hello-world-1.2.war 'https://ec2-13-235-132-208.ap-south-1.compute.amazonaws.com/:8081/manager/text/deploy?path=githubAction_tomcat_springapplication&update=true'
+        run: curl -v -u admin:admin -T /home/runner/work/spring3-mvc-maven-xml-hello-world/spring3-mvc-maven-xml-hello-world/target/spring3-mvc-maven-xml-hello-world-1.2.war 'http://13.235.132.208/:8081/manager/text/deploy?path=githubAction_tomcat_springapplication&update=true'
  
